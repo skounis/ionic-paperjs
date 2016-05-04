@@ -50,11 +50,9 @@
   },
   "scripts": {
     "test": "grunt test",
-    "//": "Post installation.",
-    "//": "Uncomment the next line to enable post install script.",
-    "//": "There is always the option to run it manually.",
-    "//": { "postinstall": "./install.sh" },
-    "//": { "postinstall": "./install.bat" }
+    "//": {
+      "postinstall": "./install.bat"
+    }
   },
   "cordovaPlatforms": [],
   "cordovaPlugins": [
@@ -73,6 +71,26 @@
     },
     "cordova-plugin-network-information",
     "cordova-plugin-whitelist",
-    "cordova-plugin-transport-security"
+    "cordova-plugin-transport-security",
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "com.ionic.keyboard",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-network-information",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-transport-security",
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-network-information",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-network-information",
+    "cordova-plugin-inappbrowser",
+    "com.ionic.keyboard",
+    "com.ionic.keyboard"
   ]
 }

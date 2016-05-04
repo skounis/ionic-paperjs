@@ -93,3 +93,7 @@ In case that the required Cordova plugins are not installed while installing Nod
 ## References and Resources
 * PaperJS Sketch example:  http://sketch.paperjs.org/#S/dZDBDoIwDIZfpdlFSIgPgPGkVxMj8SQe5qxIgJaMCgfDu7uBiia6U7t//9e/uyvSFapYJQWKuapIGT77PqVWW7BoZAFj3Yi2suWcZDGJyVXX6PqULjcykjMB04ZvDa65owBbJAnh7h7I5IclDMK8ftL6nwCrs0+AQ+QXCN5Tw4EK7ryv5hYrbjEIfSLxVPGam0fYwc6VmrISgylK9JlktL1cA/FpHekTwOv+9ff0RiwXuOKSrfPNTqU2xezfevv6a7neff3Joi6GJI2KD8f+AQ==
 * Select rectangle snippet https://gist.github.com/skounis/c924c77276f74fc81e2e60577fe88bc3#file-paper-select-js
+* Ionic and PaperJS Discussion https://forum.ionicframework.com/t/use-paper-js-to-draw-on-canvas/19854
+* PaperJS http://paperjs.org/
+* PaperJS and AngularJS http://stackoverflow.com/questions/19133953/integrate-paper-js-into-angular-js
+* Draw example with AngularJS: http://jsfiddle.net/tdhulster/yC627/4/
