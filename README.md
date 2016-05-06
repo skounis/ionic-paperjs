@@ -4,6 +4,10 @@ An Ionic app demonstration the PaperJS integration.
 
 * Project's Home: https://github.com/skounis/ionic-paperjs
 
+## Preview / Test the app
+* Ionic View ID: `e2cf0c89`
+* Android .APK {TBD}
+
 ## Dependecies, Run and Build
 
 ### Install NodeJS dependencies
