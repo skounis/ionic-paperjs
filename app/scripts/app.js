@@ -8,19 +8,10 @@ angular.module('starter', [
 	'ionic',
 	'ionic.service.core',
 	'config',
-	'ionic.service.core',
-	'ionic.service.push',
 	'supermodular.common',
-	'supermodular.home',
-	'supermodular.map',
-	'supermodular.wordpress',
 	'supermodular.menu',
-	'supermodular.elements',
-	'supermodular.popover-menu',
-	'supermodular.native-scrolling',
-	'supermodular.new-slide-box',
+	'supermodular.home',
 	'supermodular.canvas',
-	'gMaps',
 	'ngCordova'
 ])
 

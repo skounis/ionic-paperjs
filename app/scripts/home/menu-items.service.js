@@ -10,20 +10,20 @@
 	/* @ngInject */
 	function menuItems() {
 		var data = [{
-			title: 'PopOver menu',
-			path: 'popover-menu',
-			icon: 'ion-ios-arrow-down'
+			title: 'Canvas',
+			path: 'canvas',
+			icon: 'ion-edit'
 		}, {
-			title: 'Wordpress',
-			path: 'wordpress-articles',
+			title: 'Canvas 2',
+			path: 'canvas',
 			icon: 'ion-social-wordpress'
 		}, {
-			title: 'Elements',
-			path: 'elements',
+			title: 'Canvas 3',
+			path: 'canvas',
 			icon: 'ion-android-checkbox-outline'
 		}, {
-			title: 'Map',
-			path: 'map',
+			title: 'Canvas 4',
+			path: 'canvas',
 			icon: 'ion-map'
 		}];
 
