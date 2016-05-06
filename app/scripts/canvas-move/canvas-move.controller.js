@@ -2,13 +2,13 @@
 	'use strict';
 
 	angular
-		.module('supermodular.canvas')
-		.controller('CanvasController', CanvasController);
+		.module('supermodular.canvasmove')
+		.controller('CanvasMoveController', CanvasMoveController);
 
-	CanvasController.$inject = ['$scope', 'canvasService'];
+	CanvasMoveController.$inject = ['$scope', 'canvasMoveService'];
 
 	/* @ngInject */
-	function CanvasController($scope, canvasService) {
+	function CanvasMoveController($scope, canvasMoveService) {
 		var vm = angular.extend(this, {
 			path: null,
 			rect: null,
@@ -33,7 +33,7 @@
 			paper.install(window);
 			paper.setup('myCanvas');
 			var textItem = new PointText({
-				content: 'Click and drag to select with marque.',
+				content: 'Click and drag to select with move.',
 				point: new Point(20, 30),
 				fillColor: 'black',
 			});

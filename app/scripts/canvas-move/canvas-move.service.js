@@ -2,13 +2,13 @@
 	'use strict';
 
 	angular
-		.module('supermodular.canvas')
-		.factory('canvasService', canvasService);
+		.module('supermodular.canvasmove')
+		.factory('canvasMoveService', canvasMoveService);
 
-	canvasService.$inject = [];
+	canvasMoveService.$inject = [];
 
 	/* @ngInject */
-	function canvasService() {
+	function canvasMoveService() {
 		var data = {
 			origin: {
 					latitude : 37.407,

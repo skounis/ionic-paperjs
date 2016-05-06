@@ -10,21 +10,21 @@
 	/* @ngInject */
 	function menuItems() {
 		var data = [{
-			title: 'Canvas',
-			path: 'canvas',
+			title: 'Marque',
+			path: 'canvas-marque',
 			icon: 'ion-edit'
 		}, {
-			title: 'Canvas 2',
-			path: 'canvas',
-			icon: 'ion-social-wordpress'
+			title: 'Move',
+			path: 'canvas-move',
+			icon: 'ion-edit'
 		}, {
 			title: 'Canvas 3',
 			path: 'canvas',
-			icon: 'ion-android-checkbox-outline'
+			icon: 'ion-edit'
 		}, {
 			title: 'Canvas 4',
 			path: 'canvas',
-			icon: 'ion-map'
+			icon: 'ion-edit'
 		}];
 
 		return data;

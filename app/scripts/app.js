@@ -11,7 +11,8 @@ angular.module('starter', [
 	'supermodular.common',
 	'supermodular.menu',
 	'supermodular.home',
-	'supermodular.canvas',
+	'supermodular.canvasmarque',
+	'supermodular.canvasmove',
 	'ngCordova'
 ])
 
