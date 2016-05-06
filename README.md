@@ -6,7 +6,7 @@ An Ionic app demonstration the PaperJS integration.
 
 ## Preview / Test the app
 * Ionic View ID: `e2cf0c89`
-* Android .APK {TBD}
+* [Android .APK](https://drive.google.com/file/d/0BznpIOFHXC-VUU9Xc21KbGh2N1E/view?usp=sharing)
 
 ## Dependecies, Run and Build
 
