@@ -2,7 +2,7 @@
 # Ionic Paper
 An Ionic app demonstration the PaperJS integration.
 
-* Project's Home: https://github.com/skounis/{tbd}
+* Project's Home: https://github.com/skounis/ionic-paperjs
 
 ## Dependecies, Run and Build
 
@@ -80,7 +80,7 @@ In case that the required Cordova plugins are not installed while installing Nod
 
 * **cordova-plugin-device** - This plugin defines a global device object, which describes the device's hardware and software.
 * **cordova-plugin-console** - This plugin is meant to ensure that console.log() is as useful as it can be. It adds additional function for iOS, Ubuntu, Windows Phone 8, and Windows.
-* **com.ionic.keyboard** - It provides functions to make interacting with the keyboard easier, and fires events to indicate that the keyboard will hide/show.
+* **ionic-plugin-keyboard** - It provides functions to make interacting with the keyboard easier, and fires events to indicate that the keyboard will hide/show.
 * **cordova-plugin-inappbrowser** - Provides a web browser view. It could be used to open images, access web pages, and open PDF files.
 * **cordova-plugin-network-information** - This plugin provides an implementation of an old version of the Network Information API. It provides information about the device's cellular and wifi connection, and whether the device has an internet connection.
 * **cordova-plugin-whitelist** - This plugin implements a whitelist policy for navigating the application webview on Cordova 4.0

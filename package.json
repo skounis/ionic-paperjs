@@ -58,39 +58,11 @@
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
-    "com.ionic.keyboard",
-    "cordova-plugin-inappbrowser",
-    "cordova-plugin-geolocation",
-    {
-      "locator": "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
-      "id": "nl.x-services.plugins.socialsharing"
-    },
-    {
-      "locator": "https://github.com/katzer/cordova-plugin-email-composer.git",
-      "id": "de.appplant.cordova.plugin.email-composer"
-    },
-    "cordova-plugin-network-information",
-    "cordova-plugin-whitelist",
-    "cordova-plugin-transport-security",
-    "cordova-plugin-device",
-    "cordova-plugin-console",
-    "com.ionic.keyboard",
+    "ionic-plugin-keyboard",
     "cordova-plugin-inappbrowser",
     "cordova-plugin-geolocation",
     "cordova-plugin-network-information",
     "cordova-plugin-whitelist",
-    "cordova-plugin-transport-security",
-    "cordova-plugin-device",
-    "cordova-plugin-console",
-    "cordova-plugin-device",
-    "cordova-plugin-console",
-    "cordova-plugin-network-information",
-    "cordova-plugin-whitelist",
-    "cordova-plugin-geolocation",
-    "cordova-plugin-whitelist",
-    "cordova-plugin-network-information",
-    "cordova-plugin-inappbrowser",
-    "com.ionic.keyboard",
-    "com.ionic.keyboard"
+    "cordova-plugin-transport-security"
   ]
 }
