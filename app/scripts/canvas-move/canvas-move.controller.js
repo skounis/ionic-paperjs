@@ -5,10 +5,10 @@
 		.module('supermodular.canvasmove')
 		.controller('CanvasMoveController', CanvasMoveController);
 
-	CanvasMoveController.$inject = ['$scope', 'canvasMoveService'];
+	CanvasMoveController.$inject = ['$scope', '$rootScope','canvasMoveService'];
 
 	/* @ngInject */
-	function CanvasMoveController($scope, canvasMoveService) {
+	function CanvasMoveController($scope, $rootScope, canvasMoveService) {
 		var vm = angular.extend(this, {
 			tool: null,
 			project: null,
@@ -31,18 +31,20 @@
 
 		function initPaper() {
 			paper.install(window);
-			paper.setup('myCanvas');
+			paper.setup('canvasMove');
 			var textItem = new PointText({
 				content: 'Click and drag to select with move.',
 				point: new Point(20, 30),
 				fillColor: 'black',
 			});
 
-			paper.view.update();
+			// Empty the tools
+			// paper.tools = [];
+			// vm.tool = new Tool();
+			initTool();
+			vm.tool = $rootScope.tool;
 
-			vm.tool = new Tool();
 			vm.project = paper.project;
-
 
 			vm.values = {
 				paths: 50,
@@ -67,8 +69,18 @@
 			vm.tool.onMouseMove   = onMouseMove;
 			vm.tool.onMouseUp 		= onMouseUp;
 
+			paper.view.update();
+
 		} // initPaper
 
+		function initTool(){
+			if (!$rootScope.tool){
+				$rootScope.tool = new Tool();
+			}else {
+				!$rootScope.tool.remove();
+				$rootScope.tool = new Tool();
+			}
+		}
 
 		function createPaths() {
 			var radiusDelta = vm.values.maxRadius - vm.values.minRadius;
@@ -124,7 +136,7 @@
 					vm.segment = hitResult.segment;
 				} else if (hitResult.type == 'stroke') {
 					var location = hitResult.location;
-					vm.segment = path.insert(location.index + 1, event.point);
+					vm.segment = vm.path.insert(location.index + 1, event.point);
 					path.smooth();
 				}
 			}

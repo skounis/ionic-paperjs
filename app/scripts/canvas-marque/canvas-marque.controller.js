@@ -5,10 +5,10 @@
 		.module('supermodular.canvasmarque')
 		.controller('CanvasMarqueController', CanvasMarqueController);
 
-	CanvasMarqueController.$inject = ['$scope', 'canvasMarqueService'];
+	CanvasMarqueController.$inject = ['$scope', '$rootScope', 'canvasMarqueService'];
 
 	/* @ngInject */
-	function CanvasMarqueController($scope, canvasMarqueService) {
+	function CanvasMarqueController($scope, $rootScope, canvasMarqueService) {
 		var vm = angular.extend(this, {
 			path: null,
 			rect: null,
@@ -31,7 +31,7 @@
 
 		function initPaper() {
 			paper.install(window);
-			paper.setup('myCanvas');
+			paper.setup('canvasMarque');
 			var textItem = new PointText({
 				content: 'Click and drag to select with marque.',
 				point: new Point(20, 30),
@@ -41,17 +41,28 @@
 			// Sample draws
 			drawSampleRects();
 
-			paper.view.update();
-
-			vm.tool = new Tool();
+			// Empty the tools
+			// paper.tools = [];
+			// vm.tool = new Tool();
+			initTool();
+			vm.tool = $rootScope.tool;
 
 			// Define a mousedown and mousedrag handler
 			vm.tool.onMouseDown 	= onMouseDown;
 			vm.tool.onMouseDrag 	= onMouseDrag;
 			vm.tool.onMouseUp 		= onMouseUp;
 
-
+			paper.view.update();
     } // initPaper
+
+		function initTool(){
+			if (!$rootScope.tool){
+				$rootScope.tool = new Tool();
+			}else {
+				!$rootScope.tool.remove();
+				$rootScope.tool = new Tool();
+			}
+		}
 
 		function resetShapes(){
 			for (var i in vm.shapes) {
